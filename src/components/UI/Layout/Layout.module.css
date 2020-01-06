@@ -1,0 +1,118 @@
+.SectionHeader {
+  background: #990033;
+  position: relative;
+  height: 52px;
+  box-shadow: 3px 3px 10px #000;
+}
+.SectionHeader h2 {
+  display: inline-block;
+  margin: 10px 0;
+  position: absolute;
+  left: 18px;
+  transition: left 0.3s linear;
+}
+h2.SectionHeaderMoveLeft {
+  left: 60px;
+}
+.PageHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+}
+.PageHeader h2 {
+  margin: 0;
+}
+.PageTitle {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.SectionHeader h2 {
+  left: 46px !important;
+}
+.HeaderSearchIcon {
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.SearchResultsSearch {
+  width: 300px;
+  margin: auto auto 40px auto;
+  transform: translateY(-50px);
+  transition: transform 0.3s linear;
+}
+.ShowSearch {
+  width: 300px;
+  margin: auto auto 40px auto;
+  transform: translateY(0);
+}
+.NextIcon {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 14px;
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+}
+.PrevIcon {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 14px;
+  font-size: 24px;
+  cursor: pointer;
+  float: left;
+}
+.Close {
+  height: 22px;
+  width: 22px;
+  cursor: pointer;
+  z-index: 35;
+  position: absolute;
+  margin: auto;
+  background: #fff;
+  border-radius: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.CloseIcon {
+  color: #990033;
+  font-size: 26px;
+}
+.BoxShadow {
+  box-shadow: 3px 3px 10px #000;
+}
+.BoxShadowReverse {
+  box-shadow: 0 0 7px #333;
+}
+.NoResults {
+  font-weight: lighter !important;
+  font-style: italic;
+  font-size: 20px;
+}
+@media (max-width: 1090px) {
+  .SearchResultsSearch {
+    display:none;
+  }
+  
+}
+@media (max-width: 500px) {
+  .SectionHeader h2 {
+    left: 0;
+    font-weight: normal;
+    font-size: 20px;
+  }
+  .SectionHeader {
+    border-radius: 0;
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+  .HeaderSearchIcon {
+    font-size: 20px;
+    margin-right: 20px;
+  }
+  .SearchResultsSearch {
+    margin: 80px auto auto auto;
+  }
+}
